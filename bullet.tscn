@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b0jdcqlty6lul"]
+
+[ext_resource type="Texture2D" uid="uid://dftkbqwsfd68r" path="res://pistol/projectile.png" id="1_dp3qk"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_mg6i5"]
+
+[node name="bullet" type="Area2D"]
+
+[node name="Projectile" type="Sprite2D" parent="."]
+position = Vector2(-11, 0)
+texture = ExtResource("1_dp3qk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_mg6i5")
