@@ -1,7 +1,9 @@
 extends Node2D
 
+
 func _ready():
 	spawn_mob()
+
 
 func spawn_mob():
 	var new_mob = preload("res://mob.tscn").instantiate()
@@ -18,3 +20,4 @@ func _on_player_health_depleted():
 	%gameover.visible = true
 	get_tree().paused = true
 	
+
